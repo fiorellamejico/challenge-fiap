@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import telaDePostagens from '../postagens';
-import HeaderPage from '../componentes/HeaderPage';
+import HeaderPage from '../componentes/header/headerPage';
 
 export default function RotaPostagens() {
     return (
