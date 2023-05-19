@@ -1,7 +1,6 @@
 import PESSOAS_IMG from '../../Public/duotone.png'
 import FormularioDeLogin from './formularioDeLogin'
-import Pitch from '../pages/Pitch';
-import Sobre from '../pages/Sobre';
+
 
 import { Link } from 'react-router-dom';
 

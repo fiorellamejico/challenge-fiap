@@ -1,4 +1,4 @@
-import React from "react";
+
 import {AreaFooter} from './styled'
 function FooterPage(){
     return(
