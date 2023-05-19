@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 export const Post = ({ titulo, conteudo, imagemUrl, usuario, likes, comentarios }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md p-4">
+    <div className=" w-1/2 bg-white shadow-md p-4">
       <h2 className="text-xl font-bold mb-2">{titulo}</h2>
       <p className="text-gray-600 mb-4">{conteudo}</p>
       <div className="flex items-center mb-4">

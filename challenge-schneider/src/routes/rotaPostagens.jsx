@@ -2,7 +2,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import telaDePostagens from '../pages/paginaPostagens';
 import HeaderPage from '../componentes/header';
-import FooterPage from '../componentes/footer';
 import '../componentes/App.css';
 
 export default function RotaPostagens() {
@@ -12,7 +11,6 @@ export default function RotaPostagens() {
             <Routes path='/'>
                 <Route index Component={telaDePostagens} />
             </Routes>
-            <FooterPage />
         </>
     )
 }
