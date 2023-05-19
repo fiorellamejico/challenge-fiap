@@ -20,8 +20,7 @@ function Cadastrese() {
 
     return (
 
-        <div>
-
+        <div className='  h-screen flex items-center justify-center'>
             <form onSubmit={handleSubmit(inserirCliente)}>
                 <fieldset className=' p-5  text-gray-700 bg-gray-50'>
                     <h1 className=' text-2xl'>Criar seu perfil</h1>

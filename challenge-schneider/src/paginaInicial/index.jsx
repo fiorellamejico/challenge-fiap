@@ -10,7 +10,7 @@ export default function PaginaInicial() {
                 <nav className='  w-1/3'>
                     <ul className=' w-full flex justify-evenly items-center'>
                         <li className=' w-1/3 py-2 px-1 rounded-2xl  bg-'></li>
-                        <Link className=' shadow-xl transition-all hover:bg-sch-blue hover:text-white text-xl w-1/2 py-4 px-2 rounded-2xl font-bold bg-gray-200 cursor-pointer text-center border text-sch-blue border-sch-blue' to={'/login/cadastro'}><li>Faça seu cadastro</li></Link>
+                        <Link className=' shadow-xl transition-all bg-neutral-800 text-white text-xl w-1/2 py-4 px-2 rounded hover:rounded-3xl font-bold cursor-pointer text-center ' to={'/login/cadastro'}><li>Cadastre-se</li></Link>
                     </ul>
                 </nav>
             </header>
@@ -19,10 +19,11 @@ export default function PaginaInicial() {
             </div>
             <div className=' overflow-hidden w-full flex h-1/2 '>
                 <div className=' w-1/2 p-6'>
-                    <h1 className="  text-2xl lg:text-4xl text-sch-green">Bem-vindo à Rede Social Interna da Schneider</h1>
-                    <p className="text-justify text-xl font-thin">Unindo funcionários em prol da sustentabilidade, compartilhando ideias e construindo um futuro sustentável coletivamente.</p>
+                    <h1 className="  text-2xl lg:text-4xl text-sch-green">Bem-vindo à Rede Social Interna da Schneider.</h1>
+                    <p className="text-justify text-xl font-thin">A SchneiderStream tem como objetivo unir funcionários em prol da sustentabilidade, compartilhando ideias e construindo um futuro sustentável coletivamente.</p>
                 </div>
                 <div className=' w-1/2 flex justify-center items-center h-full bg-white shadow-md rounded px-8'>
+                    
                     <FormularioDeLogin />
                 </div>
             </div>
