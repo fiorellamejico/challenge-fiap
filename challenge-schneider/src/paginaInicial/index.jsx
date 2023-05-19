@@ -1,5 +1,8 @@
 import PESSOAS_IMG from '../../Public/duotone.png'
 import FormularioDeLogin from './formularioDeLogin'
+import Pitch from '../pages/Pitch';
+import Sobre from '../pages/Sobre';
+
 import { Link } from 'react-router-dom';
 
 
@@ -9,7 +12,7 @@ export default function PaginaInicial() {
             <header className=' pt-2 flex justify-end absolute w-full h-16 '>
                 <nav className='  w-1/3'>
                     <ul className=' w-full flex justify-evenly items-center'>
-                        <li className=' w-1/3 py-2 px-1 rounded-2xl  bg-'></li>
+                        
                         <Link className=' shadow-xl transition-all bg-neutral-800 text-white text-xl w-1/2 py-4 px-2 rounded hover:rounded-3xl font-bold cursor-pointer text-center ' to={'/login/cadastro'}><li>Cadastre-se</li></Link>
                     </ul>
                 </nav>
@@ -21,6 +24,14 @@ export default function PaginaInicial() {
                 <div className=' w-1/2 p-6'>
                     <h1 className="  text-2xl lg:text-4xl text-sch-green">Bem-vindo à Rede Social Interna da Schneider.</h1>
                     <p className="text-justify text-xl font-thin">A SchneiderStream tem como objetivo unir funcionários em prol da sustentabilidade, compartilhando ideias e construindo um futuro sustentável coletivamente.</p>
+                    <nav className='w-3/3 my-8'>
+                        <ul className=' w-full flex justify-evenly items-center '>
+                            <Link className='shadow-xl hover:underline transition-all text-gray text-ss font-bold cursor-pointer text-center bg-stone-100' to={'/login/pitch'}><li >Video Pitch</li> </Link>
+                            <Link className='shadow-xl hover:underline transition-all text-gray text-sl font-bold cursor-pointer text-center bg-stone-100' to={'/login/sobre'}><li >Sobre o projeto</li> </Link>
+
+                        </ul>
+                        
+                    </nav>
                 </div>
                 <div className=' w-1/2 flex justify-center items-center h-full bg-white shadow-md rounded px-8'>
                     
