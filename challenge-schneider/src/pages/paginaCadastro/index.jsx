@@ -5,7 +5,6 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import { schema } from './schemas/cadastroSchema';
 import { Link } from 'react-router-dom';
 import { AreaHeader } from '../../componentes/header/styled';
-import FooterPage from '../../componentes/footer';
 
 
 function Cadastrese() {
@@ -74,7 +73,6 @@ function Cadastrese() {
                 </form>
 
             </div>
-            <FooterPage/>
         </>
 
         

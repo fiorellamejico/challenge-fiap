@@ -1,16 +1,15 @@
 // eslint-disable-next-line no-unused-vars
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import telaDePostagens from '../pages/paginaPostagens';
-import HeaderPage from '../componentes/header';
+import Pitch from '../pages/paginaInfo/Pitch'
+import Sobre from '../pages/paginaInfo/Sobre';
 import FooterPage from '../componentes/footer';
-import '../componentes/App.css';
 
-export default function RotaPostagens() {
+export default function RotaInfo() {
     return (
         <>
-            <HeaderPage />
             <Routes path='/'>
-                <Route index Component={telaDePostagens} />
+                <Route path="/sobre" Component={Sobre} />
+                <Route path="/pitch" Component={Pitch} />
             </Routes>
             <FooterPage />
         </>

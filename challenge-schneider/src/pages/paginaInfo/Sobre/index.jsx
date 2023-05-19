@@ -1,11 +1,8 @@
 
 import { Link } from 'react-router-dom';
+import { AreaHeader } from "../../../componentes/header/styled";
 
-import { AreaHeader } from "../../componentes/header/styled";
-
-import FooterPage from "../../componentes/footer";
-
-function Pitch(){
+function Sobre(){
     return(
         <>
             <AreaHeader>
@@ -16,16 +13,15 @@ function Pitch(){
                     </div>
                     <nav>
                         <ul>
-                            <Link to={'/login/sobre'}><li >Sobre Nós</li> </Link>
+                            <Link to={'/info/pitch'}><li >Pitch</li> </Link>
                             <Link to={'/'} ><li >Voltar</li> </Link>
                         </ul>
                     </nav>
                 </div>
-            </AreaHeader> 
-            <FooterPage/>
+            </AreaHeader>          
         </>
-           
+          
     );
     
 }
-export default Pitch;
+export default Sobre;

@@ -1,31 +1,28 @@
 
 import { Link } from 'react-router-dom';
+import { AreaHeader } from "../../../componentes/header/styled";
+import logo from "../../../../Public/logoschneider.png"
 
-import { AreaHeader } from "../../componentes/header/styled";
-
-import FooterPage from "../../componentes/footer";
-function Sobre(){
-    return(
+function Pitch() {
+    return (
         <>
             <AreaHeader>
                 <div className='container'>
                     <div className='logo'>
-                        <img src='../../../Public/logoschneider.png'/>
+                        <img src={logo} alt='logo Schneider'/>
 
                     </div>
                     <nav>
                         <ul>
-                            <Link to={'/login/pitch'}><li >Pitch</li> </Link>
+                            <Link to={'/info/sobre'}><li >Sobre Nós</li> </Link>
                             <Link to={'/'} ><li >Voltar</li> </Link>
                         </ul>
                     </nav>
                 </div>
-            </AreaHeader> 
-            <FooterPage/>
-            
+            </AreaHeader>
         </>
-          
+
     );
-    
+
 }
-export default Sobre;
+export default Pitch;

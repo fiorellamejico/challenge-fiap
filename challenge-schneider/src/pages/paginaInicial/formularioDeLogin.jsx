@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom"
+
 export default function FormularioDeLogin() {
     return (
-        
+
         <form className=" mt-2 max-h-1/2">
             <h1 className=' text-sch-green text-2xl mb-2 text-center'>Fazer Login</h1>
             <div className="mb-4">
@@ -16,9 +18,9 @@ export default function FormularioDeLogin() {
                 <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Digite sua senha" />
             </div>
             <div className="flex flex-col items-center">
-                <button className=" mb-2 bg-sch-green hover:bg-sch-green-dark text-white font-bold px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                <Link className=" w-full mb-2 bg-sch-green hover:bg-sch-green-dark text-white font-bold px-4 rounded focus:outline-none focus:shadow-outline" to={'/postagens'} ><button type="button">
                     Entrar
-                </button>
+                </button></Link>
                 <a className="text-sm text-sch-green hover:text-sch-green-dark" href="#">Esqueci minha senha</a>
             </div>
         </form>
