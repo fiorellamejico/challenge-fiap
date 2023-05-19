@@ -3,6 +3,7 @@ import { useForm } from 'react-hook-form';
 import './css/Cadastrese.css'
 import { yupResolver } from '@hookform/resolvers/yup'
 import { schema } from './schemas/cadastroSchema';
+import { Link } from 'react-router-dom';
 
 
 function Cadastrese() {
@@ -47,7 +48,7 @@ function Cadastrese() {
                         <span>{errors.senhaConfirma?.message}</span>
                     </label>
                     <div className=' w-full flex justify-evenly items-center'>
-                        <p className=' text-sm w-1/2 text-gray-400 underline cursor-pointer '>Cancelar</p>
+                        <Link to={'/'} className=' text-sm w-1/2 text-gray-400 underline cursor-pointer '><p >Cancelar</p></Link>
                         <button type='submit' className=' text-xl border border-sch-blue w-1/2 transition-all bg-sch-blue text-white hover:text-sch-blue hover:bg-white'>Criar</button>
                     </div>
                 </fieldset>
