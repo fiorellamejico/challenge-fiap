@@ -18,7 +18,7 @@ export default function TelaDePostagens() {
 
 
     return (
-        <div className={` pt-2 w-full flex flex-col bg-gray-200 items-center `}>
+        <div className={` pt-2 w-full flex flex-col bg-gray-200 items-center min-h-screen `}>
             {
                 posts.length == 0 && <Loading />
             }

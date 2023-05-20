@@ -1,67 +1,28 @@
 const dados = [
     {
         titulo: "Dicas para reduzir o consumo de energia",
-        conteudo: "Hoje quero compartilhar algumas dicas valiosas para reduzir o consumo de energia em nossas instalações. Vamos juntos em direção à sustentabilidade!",
+        conteudo: `Economizar energia elétrica é uma prática importante para preservar o meio ambiente e reduzir gastos. Uma dica eficaz é desligar aparelhos eletrônicos quando não estiverem em uso, pois eles consomem energia mesmo em modo standby. Além disso, substituir lâmpadas incandescentes por modelos de LED é uma escolha inteligente, pois elas são mais eficientes e duradouras. Outra medida é aproveitar a luz natural durante o dia, mantendo cortinas e persianas abertas. Pequenas mudanças de hábito podem fazer uma grande diferença na conta de energia e no planeta.`,
         imagemUrl: {
             url: "https://static.vecteezy.com/system/resources/previews/000/554/759/original/lightbulb-vector-icon.jpg",
             alt: "Lâmpada economizando energia",
         },
-        usuario: "schneider001",
+        usuario: {
+            nome: "schneider001",
+            fotoDePerfil: 'https://media.istockphoto.com/id/655015908/pt/foto/confident-and-successful-mature-man.jpg?s=170x170&k=20&c=WcENjUYHkh8Nhb4_p31YNHHjYoP1TysZmwRzjX5zqIE='
+        },
         likes: 15,
         comentarios: [
             {
                 usuario: "sustentavel23",
+                fotoDePerfil: 'https://img.freepik.com/vetores-premium/retrato-feminino-foto-de-perfil-de-mulher-avatar-de-cor_81894-6400.jpg?w=2000',
                 conteudo: "Ótimas dicas! Vou implementá-las imediatamente. Obrigado!",
                 likes: 7,
             },
             {
                 usuario: "ecologic4life",
+                fotoDePerfil: 'https://www.projetodraft.com/wp-content/uploads/2023/01/marina-gontijo-avatar-lensa3.jpg.webp',
                 conteudo: "Parabéns pelo post! Essas práticas sustentáveis são essenciais para o nosso futuro.",
                 likes: 3,
-            },
-        ],
-    },
-    {
-        titulo: "Projeto de reciclagem de resíduos eletrônicos",
-        conteudo: "Apresento a todos o nosso novo projeto de reciclagem de resíduos eletrônicos. Vamos dar uma nova vida a esses materiais e reduzir o impacto ambiental!",
-        imagemUrl: {
-            url: "https://www.santos.sp.gov.br/static/files_www/styles/newspagesimples/public/field/image/eletronico-cachoeiro-abre.jpg?itok=30NJkU17",
-            alt: "Pilha de resíduos eletrônicos",
-        },
-        usuario: "green_team",
-        likes: 25,
-        comentarios: [
-            {
-                usuario: "eco_awareness",
-                conteudo: "Que iniciativa fantástica! Contem comigo para apoiar e divulgar esse projeto.",
-                likes: 10,
-            },
-            {
-                usuario: "tech_recycler",
-                conteudo: "Estou ansioso para participar dessa ação. Juntos, podemos fazer a diferença!",
-                likes: 5,
-            },
-        ],
-    },
-    {
-        titulo: "Dicas para um estilo de vida sustentável",
-        conteudo: "Compartilhando algumas dicas para incorporar práticas sustentáveis no nosso dia a dia. Pequenas mudanças podem fazer uma grande diferença!",
-        imagemUrl: {
-            url: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.freepik.com%2Ffotos-premium%2Fhomem-maduro-segurando-o-copo-reutilizavel-de-eco-ou-caneca-de-silicone-e-bebendo-cafe-para-viagem_15357799.htm&psig=AOvVaw1LyK-9s0PKe5qPZMFZk17Z&ust=1684605436199000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCLDll7f6gf8CFQAAAAAdAAAAABAb",
-            alt: "Pessoa segurando um copo reutilizável",
-        },
-        usuario: "ecofriendly22",
-        likes: 30,
-        comentarios: [
-            {
-                usuario: "green_guru",
-                conteudo: "Essas dicas são incríveis! Já estou colocando várias delas em prática.",
-                likes: 8,
-            },
-            {
-                usuario: "sustainable_life",
-                conteudo: "Obrigado por compartilhar! Vamos espalhar essa consciência sustentável.",
-                likes: 4,
             },
         ],
     },

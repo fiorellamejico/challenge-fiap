@@ -1,6 +1,36 @@
 .svg-icon-green {
-    width: 32px;
-    height: 32px;
-    fill: #46cd4d;
-    background-color: #46cd4d;
+  width: 32px;
+  height: 32px;
+  fill: #46cd4d;
+  background-color: #46cd4d;
+}
+
+.min-h-96 {
+  min-height: 24rem;
+  background-color: blueviolet;
+}
+
+.like-animation {
+  animation-name: like-animation;
+  animation-duration: .5s;
+}
+
+@keyframes like-animation {
+  0% {
+    transform: scale(100%);
   }
+
+  30% {
+    transform: scale(120%);
+  }
+
+  60% {
+    transform: scale(90%);
+  }
+
+  100% {
+    transform: scale(100%);
+  }
+
+
+}
