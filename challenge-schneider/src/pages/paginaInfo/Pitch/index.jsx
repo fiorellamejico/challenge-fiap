@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import { AreaHeader } from "../../../componentes/header/styled";
-import logo from "../../../../Public/logoschneider.png"
+import logo from "../../../../Public/schneider-logo-white.png"
 
 function Pitch() {
     return (
@@ -10,7 +10,6 @@ function Pitch() {
                 <div className='container'>
                     <div className='logo'>
                         <img src={logo} alt='logo Schneider'/>
-
                     </div>
                     <nav>
                         <ul>
@@ -20,6 +19,7 @@ function Pitch() {
                     </nav>
                 </div>
             </AreaHeader>
+            <h1>PITCH:</h1>
         </>
 
     );

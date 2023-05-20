@@ -1,6 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import { AreaHeader } from "../../../componentes/header/styled";
+import logo from "../../../../Public/schneider-logo-white.png"
 
 function Sobre(){
     return(
@@ -8,7 +9,7 @@ function Sobre(){
             <AreaHeader>
                 <div className='container'>
                     <div className='logo'>
-                        <img src='../../../Public/logoschneider.png'/>
+                        <img src={logo} alt='logo schneider branca'/>
 
                     </div>
                     <nav>
@@ -18,7 +19,8 @@ function Sobre(){
                         </ul>
                     </nav>
                 </div>
-            </AreaHeader>          
+            </AreaHeader>   
+            <h1>sobre:</h1>       
         </>
           
     );

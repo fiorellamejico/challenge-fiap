@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 export default function FormularioDeLogin() {
     return (
 
-        <form className=" mt-2 max-h-1/2">
-            <h1 className=' text-sch-green text-2xl mb-2 text-center'>Fazer Login</h1>
+        <form className=" mt-2 pt-4 max-h-1/2">
+            <h1 className=' text-sch-green text-2xl text-center'>Fazer Login</h1>
             <div className="mb-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
                     Email

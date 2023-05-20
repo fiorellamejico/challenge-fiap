@@ -5,7 +5,7 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import { schema } from './schemas/cadastroSchema';
 import { Link } from 'react-router-dom';
 import { AreaHeader } from '../../componentes/header/styled';
-
+import logo from "../../../Public/schneider-logo-white.png"
 
 function Cadastrese() {
 
@@ -25,13 +25,13 @@ function Cadastrese() {
             <AreaHeader>
                 <div className='container'>
                     <div className='logo'>
-                        <img src='../../../Public/logoschneider.png'/>
+                        <img src={logo} alt='logo schneider branco'/>
 
                     </div>
                     <nav>
                         <ul>
-                            <Link to={'/login/pitch'}><li >Pitch</li> </Link>
-                            <Link to={'/login/sobre'}><li >Sobre Nós</li> </Link>
+                            <Link to={'/info/pitch'}><li >Pitch</li> </Link>
+                            <Link to={'/info/sobre'}><li >Sobre Nós</li> </Link>
                             <Link to={'/'} ><li >Tela Inicial</li> </Link>
                         </ul>
                     </nav>
