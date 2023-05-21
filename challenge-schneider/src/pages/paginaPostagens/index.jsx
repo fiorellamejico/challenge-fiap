@@ -19,9 +19,9 @@ export default function TelaDePostagens() {
 
 
     return (
-        <div className=" w-full flex">
-            <div className=" w-4/12 "></div>
-            <div className={` pt-2 w-4/12 flex flex-col  items-center min-h-screen `}>
+        <div className=" w-full flex flex-col-reverse lg:flex-row items-center">
+            <div className=" hidden w-full lg:w-4/12 lg:block "></div>
+            <div className={` w-4/5 pt-2 lg:w-4/12 flex flex-col  items-center min-h-screen `}>
                 {
                     posts.length == 0 && <Loading />
                 }
@@ -32,7 +32,9 @@ export default function TelaDePostagens() {
                     })
                 }
             </div >
+            <div className='w-full lg:fixed lg:right-0 fade-in-card lg:w-4/12 p-4 '>
             <Card />
+            </div>
         </div>
 
 
