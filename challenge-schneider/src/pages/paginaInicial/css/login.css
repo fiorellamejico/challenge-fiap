@@ -1,22 +1,23 @@
-span{
-    color: #f4504c ;
+span {
+    color: #f4504c;
     font-size: 12px;
 }
 
-dialog{
+dialog {
     width: 300px;
     background-color: #f5f6fa;
     border: solid #44b4d9;
     border-radius: 8px;
-    position:inherit;
+    position: inherit;
 
 }
-.pdialog{
+
+.pdialog {
     margin: 10px 0 5px 25px;
 }
 
 
-.botaodialog{
+.botaodialog {
     width: 100%;
     height: 35px;
     padding: 5px 20px;
@@ -27,7 +28,7 @@ dialog{
     font-weight: 700;
 }
 
-.botaodialog:hover{
+.botaodialog:hover {
     width: 100%;
     height: 35px;
     padding: 5px 20px;
@@ -41,6 +42,8 @@ dialog{
     animation-name: fade-in-animation;
     animation-duration: 1s;
 }
+
+
 
 @keyframes fade-in-animation {
     0% {
