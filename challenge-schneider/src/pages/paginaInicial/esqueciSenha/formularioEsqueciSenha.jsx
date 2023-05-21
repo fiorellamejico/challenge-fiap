@@ -48,15 +48,18 @@ export default function FormularioEsqueciSenha() {
             </div>
             
             <div className="flex flex-col items-center">
-                <button ref={botaoPopUp}  type="submit"  className=" w-full mb-2 bg-sch-green hover:bg-sch-green-dark text-white font-bold px-4 rounded focus:outline-none focus:shadow-outline"  >
+                <button ref={botaoPopUp}  type="submit"  className=" botaoEsqueciSenha w-full mb-2 bg-sch-green hover:bg-sch-green-dark text-white font-bold px-4 rounded focus:outline-none focus:shadow-outline"  >
                     
                 Enviar minha senha</button>
                 <Link to={'/'}><a className="text-sm text-sch-green hover:text-sch-green-dark" href="#" >Fazer Login</a> </Link>
                 
-                <dialog ref={modal} >
-                    <p> tua senha e</p>
-                    <button ref={botaoModal} >OK</button>
+                <dialog open className="dialog" ref={modal} >
+                    <p className="pdialog" >Seu email é: <strong>teste@email.com</strong> </p>
+                    <p className="pdialog">Sua senha é: <strong>teste</strong> </p>
+                    <button className="botaodialog" ref={botaoModal} >OK</button>
                 </dialog>
+
+                
                 
                 
             </div>
