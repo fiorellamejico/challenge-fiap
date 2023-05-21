@@ -2,7 +2,7 @@ import './card.css'
 
 export default function Card() {
     return (
-        <>
+        <div className='fade-in-card w-5/6 lg:fixed lg:right-0 lg:top-10 lg:w-4/12 p-4 '>
             <div className=' mb-2 pt-3 font-bold shadow w-full rounded-xl border bg-gray-50 flex justify-center items-center'>
                 <h1 className=' select-none text-4xl text-neutral-800 text-center '>News</h1>
             </div>
@@ -15,6 +15,6 @@ export default function Card() {
                 </div>
                 <p className=' text-justify mt-2 text-xs text-neutral-600'>Regis Ataides, nosso VP de Indústria e digitalização, tem um recado para você: Nos dias 19 e 20 de junho, em Belo Horizonte, você descobrirá o que os líderes da indústria e especialistas globais têm a dizer sobre as principais tendências para o caminho da sustentabilidade e digitalização.</p>
             </div>
-        </>
+        </div>
     )
 }

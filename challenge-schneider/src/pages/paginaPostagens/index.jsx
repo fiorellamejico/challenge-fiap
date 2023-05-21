@@ -32,9 +32,7 @@ export default function TelaDePostagens() {
                     })
                 }
             </div >
-            <div className='w-full lg:fixed lg:right-0 fade-in-card lg:w-4/12 p-4 '>
             <Card />
-            </div>
         </div>
 
 
