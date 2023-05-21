@@ -1,12 +1,17 @@
 import PESSOAS_IMG from '../../../Public/duotone.png'
 import FormularioDeLogin from './login/formularioDeLogin'
 import logo from '../../../Public/schneider-logo-white.png'
+import { useState } from 'react';
+import './css/login.css'
 
 
 import { Link } from 'react-router-dom';
 
 
 export default function PaginaInicial() {
+
+    const [isDialogOpen, setDialogOpen] = useState(true);
+
     return (
         <main className=" flex flex-col h-screen text-gray-500 bg-gradient-to-b from-gray-50 via-gray-100 to-gray-200">
             <header className=' pt-2 flex justify-between absolute w-full h-16 '>
@@ -26,6 +31,14 @@ export default function PaginaInicial() {
                             <Link className=' shadow border rounded-md border-gray-600 p-2 hover:underline transition-all text-gray-600 text-sl font-bold cursor-pointer text-center' to={'/info/sobre'}><li >Sobre o projeto</li> </Link>
                         </ul>
                     </nav>
+
+                    <dialog open={isDialogOpen} className=" fade-in-animation dialog shadow-2xl absolute top-24 left-5">
+                        <h1 className=' text-lg  text-center mt-2'>Dados para teste</h1>
+                        <p className="pdialog">Seu email é: <strong>teste@email.com</strong></p>
+                        <p className="pdialog">Sua senha é: <strong>teste</strong></p>
+                        <button className="botaodialog transition-all" onClick={() => setDialogOpen(false)}>OK</button>
+                    </dialog>
+
                 </div>
                 <div className=' w-1/2 flex justify-center items-center h-full bg-white shadow-md rounded px-8'>
                     <FormularioDeLogin />
