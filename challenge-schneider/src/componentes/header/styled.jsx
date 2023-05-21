@@ -5,6 +5,7 @@ export const AreaHeader = styled.div`
     color: #fff;
     width: 100%;
     position: sticky;
+    z-index: 9999;
     top: 0;
 
     .container {

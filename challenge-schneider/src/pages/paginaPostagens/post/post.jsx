@@ -13,7 +13,7 @@ export const Post = ({ titulo, conteudo, imagemUrl, usuario, likes, comentarios 
 
   return (
     <>
-      <div className={`${commentsActive ? 'mt-2 ' : 'my-2 rounded-xl '} rounded-t-xl bg-neutral-50 flex flex-col items-center w-5/6 sm:w-3/5 md:w-2/5 shadow-md h-1/2`}>
+      <div className={`${commentsActive ? 'mt-2 ' : 'my-2 rounded-xl '} rounded-t-xl bg-neutral-50 flex flex-col items-center w-full shadow-md `}>
         <div className=' flex w-full  h-full'>
           <img src={imagemUrl.url} alt={imagemUrl.alt} className="rounded-t-xl object-cover w-full h-64" />
         </div>
@@ -34,9 +34,9 @@ export const Post = ({ titulo, conteudo, imagemUrl, usuario, likes, comentarios 
               <span className=" font-bold text-sch-green text-sm ml-4">{like ? 'Você e outras ' : ''} {likes} pessoas curtiram </span>
             </div>
             <div className=' w-1/3 flex h-full items-center justify-end pr-4 pb-4'>
-              <FontAwesomeIcon onClick={() => setCommentsActive(!commentsActive)} className=' mr-2 text-3xl opacity-80 hover:opacity-100 text-neutral-800 cursor-pointer transition after: ' icon={faComment} />
+              <FontAwesomeIcon onClick={() => setCommentsActive(!commentsActive)} className=' z-0 mr-2 text-3xl opacity-80 hover:opacity-100 text-neutral-800 cursor-pointer transition after: ' icon={faComment} />
               <span className="absolute mr-8 mb-4 inline-flex items-center justify-center w-4 h-4 bg-red-500 text-xs text-white font-bold rounded-full">{comentarios.length}</span>
-              <FontAwesomeIcon onClick={() => setLike(!like)} className={`${like ? 'text-sch-green like-animation ' : 'text-gray-600 opacity-80 '}  text-3xl  cursor-pointer transition hover:opacity-100 `} icon={like ? faHeart : faHeartEmpty} />
+              <FontAwesomeIcon onClick={() => setLike(!like)} className={` z-0 ${like ? 'text-sch-green like-animation ' : 'text-gray-600 opacity-80 '}  text-3xl  cursor-pointer transition hover:opacity-100 `} icon={like ? faHeart : faHeartEmpty} />
             </div>
           </div>
         </div>
@@ -44,15 +44,18 @@ export const Post = ({ titulo, conteudo, imagemUrl, usuario, likes, comentarios 
       </div>
       {
         commentsActive &&
-        <div className=' rounded-b-xl flex flex-col items-center p-4 w-5/6 sm:w-3/5 md:w-2/5 mb-2 bg-gradient-to-b from-gray-100 to-white   '>
+        <div className=' rounded-b-xl flex flex-col items-center p-4 w-full mb-2 bg-gradient-to-b from-gray-50 via-gray-100 to-green-100   '>
           {comentarios.map((comentario, index) => (
-            <div key={index} className=' flex border border-gray-300 bg-gray-200 w-4/5 text-neutral-800 rounded-lg mb-2'>
+            <div key={index} className=' p-2 flex border border-gray-300 bg-gray-200 w-full text-neutral-800 rounded-lg mb-2'>
               <div className=' w-1/5 flex justify-center items-center '>
                 <img src={comentario.fotoDePerfil} alt={"foto de perfil"} className=" rounded-full w-16 h-16" />
               </div>
               <div className=" p-2 w-3/5 ">
                 <div className=" text-neutral-800 text-lg ">{comentario.usuario}: </div>
                 <div className=' text-neutral-800 text-sm '>{comentario.conteudo}</div>
+              </div>
+              <div className=' w-1/5 flex justify-center items-center'>
+              {comentario.likes} <FontAwesomeIcon className=' ml-2 text-lg' icon={faHeart} /> 
               </div>
             </div>
           ))}

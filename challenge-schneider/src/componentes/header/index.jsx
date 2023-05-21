@@ -7,7 +7,7 @@ import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 export default function HeaderPage() {
     return (
         <AreaHeader>
-            <div className='container'>
+            <div className=' sticky z-50 container'>
                 <div className='logo'>
                     <img src={logo} alt='logo Schneider branco' />
 
