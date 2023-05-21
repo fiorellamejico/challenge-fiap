@@ -1,6 +1,6 @@
-import PESSOAS_IMG from '../../../../Public/duotone.png'
-import FormularioDeLogin from './formularioDeLogin'
-import logo from '../../../../Public/schneider-logo-white.png'
+import PESSOAS_IMG from '../../../Public/duotone.png'
+import FormularioDeLogin from './login/formularioDeLogin'
+import logo from '../../../Public/schneider-logo-white.png'
 
 
 import { Link } from 'react-router-dom';

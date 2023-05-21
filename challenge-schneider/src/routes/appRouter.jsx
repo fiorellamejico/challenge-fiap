@@ -2,7 +2,7 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import RotaPostagens from './rotaPostagens';
 import RotaCadastro from './rotaCadastro';
-import PaginaInicial from '../pages/paginaInicial/login';
+import PaginaInicial from '../pages/paginaInicial/index';
 import RotaInfo from './rotaInfo';
 import Pagina404 from '../pages/pagina404/pagina404';
 import EsqueciSenha from '../pages/paginaInicial/esqueciSenha';
