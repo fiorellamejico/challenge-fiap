@@ -2,57 +2,48 @@ import styled from 'styled-components';
 
 export const AreaQuiz = styled.div`
     
-
-    text-align: center;
     
-    
-    .container{
-
-    }
-    .answers{
+    .perguntas{
         width: 95%;
         margin-left: 10px;
-        color: green;
-        pading: 2em 0;
+        color: black;
+        font-size: 15px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0,0,0,.5)
     }
 
-    .ans{
-        
-        border-bottom: 1px solid green;
+    .geralPerguntas{
+        border-bottom: solid 1px green;
+        padding-left:10px;
     }
-
-    .ans:last-child{
-        border-bottom: none;
-    }
+    
 
     label{
-        
-        
+        width:50%;
     }
 
-    label:first-child:before{
-        
-
+    input{
+        margin-bottom:10px;
     }
+   
+   button{
+    background-color: #46cd4d;
+    color:white;
+    width: 100%;
+    height: 35px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: background-color 0.3 ease;
+   }
 
-    label:last-child:after{
-        
-    }
-    label:first-child{
-       
+   button:hover{
+    background-color: #00C853;
+   }
 
-    }
-
-    label:last-child{
-        
-    }
-
-
-    .congrats{
-        
-    }
 
  
 `;
