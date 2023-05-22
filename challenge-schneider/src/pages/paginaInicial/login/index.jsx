@@ -26,7 +26,7 @@ export default function FormularioDeLogin() {
     return (
 
         <form onSubmit={(handleSubmit(inserirCliente))} className=" pt-4">
-            <h1 className=' text-sch-green text-2xl text-center'>Fazer Login</h1>
+            <h1 id="textologin" className=' titulo '>Fazer Login</h1>
             <div className="mb-4">
                 <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
                     Email
@@ -54,10 +54,10 @@ export default function FormularioDeLogin() {
                 <span>{errors.senha?.message}</span>
             </div>
             <div className="flex flex-col items-center">
-                <button className=" w-full bg-sch-green hover:bg-sch-green-dark text-white font-bold px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+                <button className=" botaoentrar w-full bg-sch-green hover:bg-sch-green-dark text-white font-bold px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
                     Entrar
                 </button>
-                <Link to={'/esquecisenha'}><button type="submit" className="text-sm text-sch-green hover:text-sch-green-dark" href="#">Esqueci minha senha</button></Link>
+                <Link to={'/esquecisenha'}><button type="submit" className=" esqsenha text-sm text-sch-green hover:text-sch-green-dark" href="#">Esqueci minha senha</button></Link>
             </div>
         </form>
     )
