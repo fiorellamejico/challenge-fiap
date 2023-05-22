@@ -3,6 +3,7 @@ import '../cardLateralDireita/card.css'
 import getUserData from '../schemas/usuarioTesteSchema'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom';
 
 export default function Card() {
 
@@ -14,8 +15,8 @@ export default function Card() {
     }, [])
 
     return (
-        <div className=" select-none flex justify-center w-full lg:w-4/12 p-4 lg:fixed lg:top-10 lg:left-0 ">
-            <div className=' h-48 w-full rounded-xl shadow-inner bg-neutral-200 p-2 '>
+        <div className=" select-none flex flex-col justify-center w-full lg:w-4/12 p-4 lg:fixed lg:top-10 lg:left-0 ">
+            <div className=' mb-3 h-48 w-full  rounded-xl shadow-inner bg-neutral-200 p-2 '>
                 <h2 className=' font-bold text-xl text-neutral-500 text-center mb-4 '>
                     Seu Perfil
                 </h2>
@@ -29,6 +30,18 @@ export default function Card() {
                         <p className=' text-xs '> Ranking mensal: 24° lugar. </p>
                     </div>
                 </div>
+            </div>
+            <div className=' mb-2 pt-3 font-bold shadow w-full rounded-xl border bg-gray-50 flex justify-center items-center'>
+                <h1 className=' select-none text-3xl text-neutral-800 text-center '>Próxima sessão da tarde</h1>
+            </div>
+            <div className=' h-48 w-full flex-col rounded-xl shadow-inner bg-gray-50 p-2 '>
+                <h2 className=' font-bold text-xl text-sch-green text-center mb-4 '>
+                    Wall-e
+                </h2>
+                <div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/m5_lIuBXKWk" title="Wall-e" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                </div>
+                
+
             </div>
         </div>
     )
