@@ -1,12 +1,34 @@
+import { useEffect, useState } from 'react'
 import '../cardLateralDireita/card.css'
+import getUserData from '../schemas/usuarioTesteSchema'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Card() {
+
+    const [user, setUser] = useState([])
+
+    useEffect(() => {
+        setUser(getUserData())
+        console.log(user)
+    }, [])
+
     return (
-        <div className=" flex justify-center w-full lg:w-4/12 p-4 lg:fixed lg:top-10 lg:left-0 ">
+        <div className=" select-none flex justify-center w-full lg:w-4/12 p-4 lg:fixed lg:top-10 lg:left-0 ">
             <div className=' h-48 w-full rounded-xl shadow-inner bg-neutral-200 p-2 '>
                 <h2 className=' font-bold text-xl text-neutral-500 text-center mb-4 '>
-                    Olá, Teste!
+                    Seu Perfil
                 </h2>
+                <div className=' w-full flex justify-center'>
+                    <img className=' border-4 border-sch-green rounded-full w-24 h-24' src={user.fotoDePerfil} alt="foto de perfil" />
+                    <div className=' flex flex-col justify-center ml-4 text-neutral-800'>
+                        <p className=''>Nome: {user.nome}</p>
+                        <p className=''>Email: {user.email}</p>
+                        <p className=' font-serif'>&quot;{user.titulo}&quot;</p>
+                        <p className=' text-green-800'>Pontuação: <FontAwesomeIcon icon={faHeart} /> {user.pontos} </p>
+                        <p className=' text-xs '> Ranking mensal: 24° lugar. </p>
+                    </div>
+                </div>
             </div>
         </div>
     )

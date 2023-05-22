@@ -1,15 +1,24 @@
 import PropTypes from 'prop-types';
 import './post.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faComment, faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faComment, faHeart } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as faHeartEmpty } from '@fortawesome/free-regular-svg-icons'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import getUserData from '../schemas/usuarioTesteSchema';
 
 
 export const Post = ({ titulo, conteudo, imagemUrl, usuario, likes, comentarios }) => {
 
   const [like, setLike] = useState(false)
   const [commentsActive, setCommentsActive] = useState(false)
+
+  const [user, setUser] = useState([])
+
+  useEffect(() => {
+    setUser(getUserData())
+    console.log(user)
+  }, [])
+
 
   return (
     <>
@@ -20,9 +29,10 @@ export const Post = ({ titulo, conteudo, imagemUrl, usuario, likes, comentarios 
         <div className=' flex flex-col justify-between w-full h-full '>
           <div className=' flex items-center rounded-br-xl w-full p-4'>
             <img src={usuario.fotoDePerfil} alt={`foto de perfil`} className=" mr-2 rounded-full object-cover w-16 h-16" />
+
             <div>
-              <span className=" text-neutral-800 text-lg ">{usuario.nome}</span>
-              <p className=' text-gray-600'> Postou:</p>
+              <p className=" text-neutral-800 text-lg ">{usuario.nome}</p>
+              <p className=' italic text-xs text-neutral-600 mb-1'>&quot;{usuario.titulo}&quot;</p>
             </div>
           </div>
           <div className=' w-full h-4/6 p-4 '>
@@ -52,13 +62,19 @@ export const Post = ({ titulo, conteudo, imagemUrl, usuario, likes, comentarios 
               </div>
               <div className=" p-2 w-3/5 ">
                 <div className=" text-neutral-800 text-lg ">{comentario.usuario}: </div>
+                <p className=' italic text-xs text-neutral-600 mb-2'>&quot;{comentario.titulo}&quot;</p>
                 <div className=' text-neutral-800 text-sm '>{comentario.conteudo}</div>
               </div>
               <div className=' w-1/5 flex justify-center items-center'>
-              {comentario.likes} <FontAwesomeIcon className=' ml-2 text-lg' icon={faHeart} /> 
+                {comentario.likes} <FontAwesomeIcon className=' ml-2 text-lg' icon={faHeart} />
               </div>
             </div>
           ))}
+          <div className=' flex w-full justify-evenly items-center'>
+            <img src={user.fotoDePerfil} alt={`foto de perfil`} className=" mr-2 rounded-full object-cover w-14 h-14" />
+            <input disabled value={"Quack!"} className=' w-3/4 p-1 text-neutral-400 text-lg' type="text" />
+            <button className=' transition-all w-12 h-12 rounded-full text-white bg-sch-green border border-sch-green hover:bg-white hover:text-sch-green'><FontAwesomeIcon icon={faArrowRight} /></button>
+          </div>
         </div>
       }
     </>
@@ -75,6 +91,7 @@ Post.propTypes = {
   usuario: PropTypes.shape({
     nome: PropTypes.string.isRequired,
     fotoDePerfil: PropTypes.string.isRequired,
+    titulo: PropTypes.string.isRequired,
   }),
   likes: PropTypes.number.isRequired,
   comentarios: PropTypes.arrayOf(
@@ -83,6 +100,7 @@ Post.propTypes = {
       fotoDePerfil: PropTypes.string.isRequired,
       conteudo: PropTypes.string.isRequired,
       likes: PropTypes.number.isRequired,
+      titulo: PropTypes.string.isRequired,
     })
   ).isRequired,
 };
