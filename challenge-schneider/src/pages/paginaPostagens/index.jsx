@@ -20,7 +20,7 @@ export default function TelaDePostagens() {
 
 
     return (
-        <div className=" w-full flex flex-col-reverse lg:flex-row items-center">
+        <div className=" w-full flex flex-col-reverse lg:flex-row justify-center items-center">
             <div className=" w-full lg:w-4/12">
                 <Perfil />
             </div>

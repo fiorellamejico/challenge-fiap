@@ -3,8 +3,8 @@ const dados = [
         titulo: "Dicas para reduzir o consumo de energia",
         conteudo: `Economizar energia elétrica é uma prática importante para preservar o meio ambiente e reduzir gastos. Uma dica eficaz é desligar aparelhos eletrônicos quando não estiverem em uso, pois eles consomem energia mesmo em modo standby. Além disso, substituir lâmpadas incandescentes por modelos de LED é uma escolha inteligente, pois elas são mais eficientes e duradouras. Outra medida é aproveitar a luz natural durante o dia, mantendo cortinas e persianas abertas. Pequenas mudanças de hábito podem fazer uma grande diferença na conta de energia e no planeta.`,
         imagemUrl: {
-            url: "https://static.vecteezy.com/system/resources/previews/000/554/759/original/lightbulb-vector-icon.jpg",
-            alt: "Lâmpada economizando energia",
+            url: "https://www.obramax.com.br/media/magefan_blog/tipos-de-lampada.jpg",
+            alt: "Lâmpada",
         },
         usuario: {
             nome: "schneider001",

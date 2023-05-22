@@ -28,20 +28,20 @@ export const Post = ({ titulo, conteudo, imagemUrl, usuario, likes, comentarios 
         </div>
         <div className=' flex flex-col justify-between w-full h-full '>
           <div className=' flex items-center rounded-br-xl w-full p-4'>
-            <img src={usuario.fotoDePerfil} alt={`foto de perfil`} className=" mr-2 rounded-full object-cover w-16 h-16" />
+            <img src={usuario.fotoDePerfil} alt={`foto de perfil`} className=" mr-2 rounded-full object-cover w-10 h-10" />
 
             <div>
-              <p className=" text-neutral-800 text-lg ">{usuario.nome}</p>
+              <p className=" text-neutral-800 text-sm font-bold ">{usuario.nome}</p>
               <p className=' italic text-xs text-neutral-600 mb-1'>&quot;{usuario.titulo}&quot;</p>
             </div>
           </div>
           <div className=' w-full h-4/6 p-4 '>
-            <h2 className="text-2xl font-bold mb-2">{titulo}</h2>
-            <p className=" text-sm text-gray-600 mb-4">{conteudo}</p>
+            <h2 className="text-2xl font-bold mb-2 text-neutral-800">{titulo}</h2>
+            <p className=" text-neutral-600 mb-4 text-xs">{conteudo}</p>
           </div>
           <div className=' flex justify-end items-center rounded-br-xl h-1/6 w-full'>
             <div className=' w-2/3'>
-              <span className=" font-bold text-sch-green text-sm ml-4">{like ? 'Você e outras ' : ''} {likes} pessoas curtiram </span>
+              <span className=" text-sch-green text-xs ml-4">{like ? 'Você e outras ' : ''} {likes} pessoas curtiram </span>
             </div>
             <div className=' w-1/3 flex h-full items-center justify-end pr-4 pb-4'>
               <FontAwesomeIcon onClick={() => setCommentsActive(!commentsActive)} className=' z-0 mr-2 text-3xl opacity-80 hover:opacity-100 text-neutral-800 cursor-pointer transition after: ' icon={faComment} />

@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+img {
+    pointer-events: none
+}
+
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
