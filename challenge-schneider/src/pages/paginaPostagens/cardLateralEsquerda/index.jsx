@@ -3,7 +3,9 @@ import '../cardLateralDireita/card.css'
 import getUserData from '../schemas/usuarioTesteSchema'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { Link } from 'react-router-dom';
+import Quiz from '../../../componentes/quiz'
+
+
 
 export default function Card() {
 
@@ -32,17 +34,9 @@ export default function Card() {
                 </div>
             </div>
             <div className=' mb-2 pt-3 font-bold shadow w-full rounded-xl border bg-gray-50 flex justify-center items-center'>
-                <h1 className=' select-none text-3xl text-neutral-800 text-center '>Próxima sessão da tarde</h1>
+                <Quiz/>
             </div>
-            <div className=' h-48 w-full flex-col rounded-xl shadow-inner bg-gray-50 p-2 '>
-                <h2 className=' font-bold text-xl text-sch-green text-center mb-4 '>
-                    Wall-e
-                </h2>
-                <div>
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/m5_lIuBXKWk" title="Wall-e" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                </div>
-                
-
-            </div>
+            
         </div>
     )
 }
