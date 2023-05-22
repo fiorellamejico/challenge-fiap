@@ -4,7 +4,7 @@ import getUserData from '../schemas/usuarioTesteSchema'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Quiz from '../../../componentes/quiz'
-
+import '../cardLateralDireita/card.css'
 
 
 export default function Card() {
@@ -17,7 +17,7 @@ export default function Card() {
     }, [])
 
     return (
-        <div className=" select-none flex flex-col justify-center w-full lg:w-4/12 p-4 lg:fixed lg:top-10 lg:left-0 ">
+        <div className=" select-none flex flex-col justify-center fade-in-card w-full lg:w-4/12 p-4 lg:fixed lg:top-10 lg:left-0 ">
             <div className=' mb-3 h-48 w-full  rounded-xl shadow-inner bg-neutral-200 p-2 '>
                 <h2 className=' font-bold text-xl text-neutral-500 text-center mb-4 '>
                     Seu Perfil
