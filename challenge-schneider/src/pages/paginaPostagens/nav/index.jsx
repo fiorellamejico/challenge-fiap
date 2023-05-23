@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import '../news/card.css'
-import '../news/card.css'
 import getUserData from '../schemas/usuarioTesteSchema'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

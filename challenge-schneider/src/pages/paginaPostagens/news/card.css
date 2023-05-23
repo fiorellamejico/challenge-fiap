@@ -1,6 +1,6 @@
 .fade-in-card {
     animation-name: fade-in-card;
-    animation-duration: 3s;
+    animation-duration: 1.5s;
 }
 
 @keyframes fade-in-card {
