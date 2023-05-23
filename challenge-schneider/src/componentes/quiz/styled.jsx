@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 export const AreaQuiz = styled.div`
+  
     
-    
+     
     .perguntas{
+        font-family: montserrat;
         width: 95%;
         margin-left: 10px;
         color: black;
@@ -37,11 +39,14 @@ export const AreaQuiz = styled.div`
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 700;
-    transition: background-color 0.3 ease;
+    outline: 2px solid #46C052;
+    font-weight: 500;
+    
    }
 
    button:hover{
-    background-color: #00C853;
+    transition: 0.4s;
+    box-shadow: 0px 00px 20px #46C052;
    }
 
 

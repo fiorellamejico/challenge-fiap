@@ -18,7 +18,7 @@ export default function Card() {
 
     return (
         <div className=" select-none flex flex-col justify-center fade-in-card w-full lg:w-4/12 p-4 lg:fixed lg:top-10 lg:left-0 ">
-            <div className=' mb-3 h-48 w-full  rounded-xl shadow-inner bg-neutral-200 p-2 '>
+            <div className=' mb-3 h-48  rounded-xl shadow-inner bg-neutral-200 p-2 '>
                 <h2 className=' font-bold text-xl text-neutral-500 text-center mb-4 '>
                     Seu Perfil
                 </h2>
@@ -32,7 +32,7 @@ export default function Card() {
                         <p className=' text-xs '> Ranking mensal: 24° lugar. </p>
                     </div>
                 </div>
-            </div>
+            </div> 
             <div className=' mb-2 pt-3 font-bold shadow w-full rounded-xl border bg-gray-50 flex justify-center items-center'>
                 <Quiz/>
             </div>
