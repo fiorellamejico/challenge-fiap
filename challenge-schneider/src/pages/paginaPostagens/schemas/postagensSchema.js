@@ -202,6 +202,6 @@ export const postagensSchema = async () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(dados);
-        }, 2000);
+        }, 1000);
     });
 };
