@@ -23,7 +23,7 @@ export default function PaginaInicial() {
                 <img className=' w-full h-full object-cover ' src={PESSOAS_IMG} alt="Pessoas rindo imagem duotônica" />
             </div>
 
-            <div  className=' w-full flex flex-col justify-center items-center md:flex-row h-3/5 '>
+            <div  className=' w-full flex flex-col justify-center items-center h-fit lg:flex-row lg:h-3/5 '>
                 <div className=' w-70 md:w-1/2 p-10'>
                     <h1 className="titulo ">Bem-vindo à Rede Social Interna da Schneider.</h1>
                     <p id='copy01' className="text-justify text-xl font-thin">A SchneiderStream tem como objetivo unir funcionários em prol da sustentabilidade, compartilhando ideias e construindo um futuro sustentável coletivamente.</p>
