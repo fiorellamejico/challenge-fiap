@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function News() {
     return (
         <div className=' h-screen flex flex-col items-center '>
-            <div className=' flex flex-col items-center lg:items-start w-1/2 p-4'>
+            <div className=' flex flex-col items-center lg:items-start w-5/6 lg:w-1/2 p-4'>
                 <div className=' pt-3 font-bold  w-full'>
                     <h1 className=' mb-2 text-center hidden lg:block select-none text-4xl text-neutral-600 '>News</h1>
                 </div>
