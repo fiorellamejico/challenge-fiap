@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import telaDePostagens from '../pages/paginaPostagens';
 import HeaderPage from '../componentes/header';
 import '../componentes/App.css';
+import MeuPerfil from '../pages/paginaPostagens/perfil';
+import News from '../pages/paginaPostagens/news';
 
 export default function RotaPostagens() {
     return (
@@ -10,6 +12,8 @@ export default function RotaPostagens() {
             <HeaderPage />
             <Routes path='/'>
                 <Route index Component={telaDePostagens} />
+                <Route path='/perfil' Component={MeuPerfil} />
+                <Route path='/news' Component={News} />
             </Routes>
         </>
     )

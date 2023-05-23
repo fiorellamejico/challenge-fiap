@@ -2,8 +2,7 @@ import { useState, useEffect } from "react"
 import { postagensSchema } from "./schemas/postagensSchema"
 import { Post } from "./post/post"
 import Loading from "../../componentes/loading/loading";
-import Card from "./cardLateralDireita";
-import Perfil from "./cardLateralEsquerda";
+import Nav from "./nav";
 
 export default function TelaDePostagens() {
 
@@ -22,11 +21,11 @@ export default function TelaDePostagens() {
     return (
         <div className=" w-full flex flex-col lg:flex-row justify-center items-center">
             <div className=" w-full lg:w-4/12">
-                <Perfil />
+                <Nav />
             </div>
             <div className={` w-4/5 pt-2 lg:w-4/12 flex flex-col  items-center min-h-screen `}>
 
-            <h1 className=" text-neutral-800  lg:hidden text-3xl font-semibold ">Linha do tempo</h1>
+                <h1 className=" text-neutral-800  lg:hidden text-3xl font-semibold ">Linha do tempo</h1>
 
                 {
                     posts.length == 0 && <Loading />
@@ -39,9 +38,8 @@ export default function TelaDePostagens() {
                 }
             </div >
             <div className=" w-full lg:w-4/12 ">
-                <Card />
             </div>
-            
+
         </div>
 
 

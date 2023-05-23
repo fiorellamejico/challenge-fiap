@@ -5,6 +5,7 @@ import { faArrowRight, faComment, faHeart } from '@fortawesome/free-solid-svg-ic
 import { faHeart as faHeartEmpty } from '@fortawesome/free-regular-svg-icons'
 import { useState, useEffect } from 'react';
 import getUserData from '../schemas/usuarioTesteSchema';
+import Comentario from './comentario';
 
 
 export const Post = ({ titulo, conteudo, imagemUrl, usuario, likes, comentarios }) => {
@@ -54,21 +55,9 @@ export const Post = ({ titulo, conteudo, imagemUrl, usuario, likes, comentarios 
       </div>
       {
         commentsActive &&
-        <div className=' rounded-b-xl flex flex-col items-center p-4 w-full mb-2 bg-gradient-to-b from-gray-50 via-gray-100 to-green-100   '>
+        <div className=' rounded-b-xl flex flex-col items-center p-4 w-full mb-2 bg-gradient-to-b from-gray-50 via-gray-100 to-gray-200   '>
           {comentarios.map((comentario, index) => (
-            <div key={index} className=' p-2 flex border border-gray-300 bg-gray-200 w-full text-neutral-800 rounded-lg mb-2'>
-              <div className=' w-1/5 flex justify-center items-center '>
-                <img src={comentario.fotoDePerfil} alt={"foto de perfil"} className=" rounded-full w-16 h-16" />
-              </div>
-              <div className=" p-2 w-3/5 ">
-                <div className=" text-neutral-800 text-lg ">{comentario.usuario}: </div>
-                <p className=' italic text-xs text-neutral-600 mb-2'>&quot;{comentario.titulo}&quot;</p>
-                <div className=' text-neutral-800 text-sm '>{comentario.conteudo}</div>
-              </div>
-              <div className=' w-1/5 flex justify-center items-center'>
-                {comentario.likes} <FontAwesomeIcon className=' ml-2 text-lg' icon={faHeart} />
-              </div>
-            </div>
+            <Comentario key={index} comentario={comentario} />
           ))}
           <div className=' flex w-full justify-evenly items-center'>
             <img src={user.fotoDePerfil} alt={`foto de perfil`} className=" mr-2 rounded-full object-cover w-14 h-14" />
