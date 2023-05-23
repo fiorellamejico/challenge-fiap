@@ -1,38 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: montserrat;
 }
-h1{
-    color: #44b4d9;
-    text-align: start;
+
+#titulo{
+    color: #46CD4D;
+    font-weight: 600;
+    text-align: center;
     font-size: 20px;
+    text-transform: uppercase;
     padding-bottom: 10px;
 }
 
+
 form{
     width: 400px;
-    
+    border-radius: 20px;
     margin: 25px auto;
     background-color: #ffffff;
     color: #3d3d3d;
     
 }
 
+.cancelartexto{
+    text-align: center;
+}
+
+.botaocriar{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    background-color: #46CD4D;
+    padding: 5px;
+    outline: 2px solid #46C052;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.botaocriar:hover{
+    transition: 0.3s;
+    box-shadow: 0px 00px 20px #46C052;
+}
+
 fieldset{
+    border-radius: 20px;
     padding: 20px;
     border: 1px solid gray;
     border: none;
-    box-shadow: 10px 10px 10px 3px #e4e5e6;
+    box-shadow: 0px 0px 40px 1px #c9cfc9;
 }
 
 label{
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    
-
 
 }
 

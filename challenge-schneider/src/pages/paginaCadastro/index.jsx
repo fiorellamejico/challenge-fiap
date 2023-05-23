@@ -41,7 +41,7 @@ function Cadastrese() {
             <div className='  flex items-center justify-center'>
                 <form onSubmit={handleSubmit(inserirCliente)}>
                     <fieldset className=' p-5  text-gray-700 bg-gray-50'>
-                        <h1 className=' text-2xl'>Criar seu perfil</h1>
+                        <h1 id='titulo' className=''>Criar seu perfil</h1>
                         <label>Nome:
                             <input className=' bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 ' placeholder='Insira seu nome' type="text" {...register('nome')} />
                             <span>{errors.nome?.message}</span>
@@ -64,11 +64,10 @@ function Cadastrese() {
                             <input className=' bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 ' placeholder='Insira a senha novamente' type="password" {...register('senhaConfirma')} />
                             <span>{errors.senhaConfirma?.message}</span>
                         </label>
-                        <div className=' w-full flex justify-evenly items-center'>
-                            <Link to={'/'} className=' text-sm w-1/2 text-gray-400 underline cursor-pointer '><p >Cancelar</p></Link>
-                            <button type='submit' className=' text-xl border border-sch-blue w-1/2 transition-all bg-sch-blue text-white hover:text-sch-blue hover:bg-white'>Criar</button>
-                        </div>
-                    </fieldset>
+                            <button type='submit' className='botaoentrar w-full bg-sch-green hover:bg-sch-green-dark text-white font-bold px-4 rounded focus:outline-none focus:shadow-outline botaocriar'>Criar</button>
+                            <Link to={'/'} className=' cancelartexto text-sm w-1/2 text-gray-400 underline cursor-pointer'><p >Cancelar</p></Link>
+                            
+                        </fieldset>
 
                 </form>
 
