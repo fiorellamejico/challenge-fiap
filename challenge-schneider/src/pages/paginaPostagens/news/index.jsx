@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 export default function News() {
     return (
         <div className=' h-screen flex flex-col items-center '>
-            <div className=' flex flex-col items-center lg:items-start w-5/6 lg:w-1/2 p-4'>
+            <div className=' flex flex-col items-center lg:items-start w-11/12 lg:w-1/2 p-4'>
                 <div className=' pt-3 font-bold  w-full'>
-                    <h1 className=' mb-2 text-center hidden lg:block select-none text-4xl text-neutral-600 '>News</h1>
+                    <h1 className=' mb-2 text-center select-none text-4xl text-neutral-600 '>News</h1>
                 </div>
                 <div className=" p-4 w-full rounded-xl border shadow-inner bg-neutral-200">
                     <h2 className=' text-lg text-neutral-600 text-center mb-2 '>

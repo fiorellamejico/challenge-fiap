@@ -9,7 +9,6 @@ export default function RotaCadastro() {
             <Routes path='/'>
                 <Route path='/' Component={Cadastrese} />
             </Routes>
-            <FooterPage />
         </>
     )
 }
