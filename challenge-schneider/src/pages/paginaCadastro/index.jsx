@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { AreaHeader } from '../../componentes/header/styled';
 import logo from "../../../Public/schneider-logo-white.png"
 import Pergunta from './pergunta';
+import { gerarPerfil } from './schemas/gerarPerfil';
 
 function Cadastrese() {
 
@@ -24,15 +25,15 @@ function Cadastrese() {
         resolver: yupResolver(schema)
     })
 
-    const [listaClientes, setListaClientes] = useState([])
+    // const [listaClientes, setListaClientes] = useState([])
 
-    function inserirCliente(cliente) {
-        setListaClientes([...listaClientes, cliente])
+    function inserirCliente() {
+        alert("Cadastro efetuado! Seu perfil de usuário: " + gerarPerfil(getPerfil))
+        window.location.href = '/'
     }
 
     const pontuar = (pontos, perfil) => {
         getPerfil[perfil] = pontos
-        console.log(getPerfil)
     }
 
     return (
@@ -57,13 +58,13 @@ function Cadastrese() {
             <div className='  flex items-center justify-center'>
                 <form onSubmit={handleSubmit(inserirCliente)}>
                     <fieldset className=' overflow-scroll p-5  text-gray-700 bg-gray-50'>
-                        <h1 id='titulo' className=''>Criar seu perfil</h1>
+                        <h1 id='titulo' className=' text-center '>Criar seu perfil</h1>
                         <label>Nome:
-                            <input className=' bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 ' placeholder='Insira seu nome' type="text" {...register('nome')} />
+                            <input value={'CadastroTeste'} className=' bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 ' placeholder='Insira seu nome' type="text" {...register('nome')} />
                             <span>{errors.nome?.message}</span>
                         </label>
                         <label>Email:
-                            <input className=' bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 ' placeholder='Insira seu e-mail' type="text" {...register('email')} />
+                            <input value={'CadastroTeste@email.com'} className=' bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 ' placeholder='Insira seu e-mail' type="text" {...register('email')} />
                             <span>{errors.email?.message}</span>
                         </label>
 
@@ -73,16 +74,18 @@ function Cadastrese() {
                         </label> */}
 
                         <label>Senha:
-                            <input className=' bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg  p-2.5 ' placeholder='Insira a senha' type="password" {...register('senha')} />
+                            <input value={'123123123'} className=' bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg  p-2.5 ' placeholder='Insira a senha' type="password" {...register('senha')} />
                             <span>{errors.senha?.message}</span>
                         </label>
                         <label>Repita a senha:
-                            <input className=' bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 ' placeholder='Insira a senha novamente' type="password" {...register('senhaConfirma')} />
+                            <input value={'123123123'} className=' bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 ' placeholder='Insira a senha novamente' type="password" {...register('senhaConfirma')} />
                             <span>{errors.senhaConfirma?.message}</span>
                         </label>
 
 
                         <div>
+                            <h1 className=' font-bold mt-6 mb-2 text-xl text-center'> Conte um pouco sobre você...</h1>
+                            <p className='mb-4 text-sm text-neutral-400'>Indique sua concordância com as afirmações usando bolinhas. Bolinhas maiores representam maior intensidade de concordância.</p>
                             <Pergunta pergunta="Estou sempre em busca de tecnologias mais eficientes em termos de consumo de energia." perfil='Energia Verde' pontuar={pontuar} />
                             <Pergunta pergunta="Uso a bicicleta como meio de transporte principal no meu dia-a-dia." perfil='Ciclista Sustentável' pontuar={pontuar} />
                             <Pergunta pergunta="Pratico a separação correta dos resíduos e incentivo outros a fazerem o mesmo." perfil='Campeão da Reciclagem' pontuar={pontuar} />
