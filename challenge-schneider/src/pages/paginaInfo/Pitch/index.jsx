@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import { AreaHeader } from "../../../componentes/header/styled";
-import logo from "../../../../Public/schneider-logo-white.png"
+import logo from "/images/schneider-logo-white.png"
 
 function Pitch() {
     return (

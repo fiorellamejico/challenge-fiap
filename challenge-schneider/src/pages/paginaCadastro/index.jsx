@@ -5,7 +5,7 @@ import { yupResolver } from '@hookform/resolvers/yup'
 import { schema } from './schemas/cadastroSchema';
 import { Link } from 'react-router-dom';
 import { AreaHeader } from '../../componentes/header/styled';
-import logo from "../../../Public/schneider-logo-white.png"
+import logo from "/images/schneider-logo-white.png"
 import Pergunta from './pergunta';
 import { gerarPerfil } from './schemas/gerarPerfil';
 
@@ -60,11 +60,11 @@ function Cadastrese() {
                     <fieldset className=' overflow-scroll p-5  text-gray-700 bg-gray-50'>
                         <h1 id='titulo' className=' text-center '>Criar seu perfil</h1>
                         <label>Nome:
-                            <input  className=' bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 ' placeholder='Insira seu nome' type="text" {...register('nome')} />
+                            <input className=' bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 ' placeholder='Insira seu nome' type="text" {...register('nome')} />
                             <span>{errors.nome?.message}</span>
                         </label>
                         <label>Email:
-                            <input  className=' bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 ' placeholder='Insira seu e-mail' type="text" {...register('email')} />
+                            <input className=' bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 ' placeholder='Insira seu e-mail' type="text" {...register('email')} />
                             <span>{errors.email?.message}</span>
                         </label>
 
@@ -78,7 +78,7 @@ function Cadastrese() {
                             <span>{errors.senha?.message}</span>
                         </label>
                         <label>Repita a senha:
-                            <input  className=' bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 ' placeholder='Insira a senha novamente' type="password" {...register('senhaConfirma')} />
+                            <input className=' bg-gray-100 border border-gray-300 text-gray-900 text-sm rounded-lg p-2.5 ' placeholder='Insira a senha novamente' type="password" {...register('senhaConfirma')} />
                             <span>{errors.senhaConfirma?.message}</span>
                         </label>
 

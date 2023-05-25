@@ -1,6 +1,6 @@
-import PESSOAS_IMG from '/duotone.png'
+import PESSOAS_IMG from '/images/duotone.png'
 import FormularioDeLogin from './login'
-import logo from '/schneider-logo-white.png'
+import logo from '/images/schneider-logo-white.png'
 import { useState } from 'react';
 import './css/login.css'
 import { Link } from 'react-router-dom';
