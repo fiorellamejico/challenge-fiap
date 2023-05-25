@@ -1,4 +1,4 @@
-import PESSOAS_IMG from '../../../Public/duotone.png'
+import PESSOAS_IMG from '/duotone.png'
 import FormularioDeLogin from './login'
 import logo from '/schneider-logo-white.png'
 import { useState } from 'react';
