@@ -1,5 +1,5 @@
 import { AreaHeader } from './styled'
-import logo from '../../../Public/schneider-logo-white.png'
+import logo from '/schneider-logo-white.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSignOut } from '@fortawesome/free-solid-svg-icons';
 

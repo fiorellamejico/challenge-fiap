@@ -1,4 +1,4 @@
-import logo from '../../../public/schneider-logo-white.png'
+import logo from '/schneider-logo-white.png'
 
 export default function HeaderAdmin() {
     return (
