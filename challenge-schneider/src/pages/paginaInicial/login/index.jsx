@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup'
 import { schema } from './schemas/loginSchema';
 import '../css/login.css'
-import { useState } from 'react';
+// import { useState } from 'react';
 
 export default function FormularioDeLogin() {
 
