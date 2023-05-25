@@ -11,12 +11,14 @@ export default function FormularioDeLogin() {
         resolver: yupResolver(schema)
     })
 
-    const [listaClientes, setListaClientes] = useState([])
+    // const [listaClientes, setListaClientes] = useState([])
 
     function inserirCliente(cliente) {
         if (cliente.email.trim() === 'teste@email.com' && cliente.senha === 'teste123') {
-            setListaClientes([...listaClientes, cliente])
+            // setListaClientes([...listaClientes, cliente])
             window.location.href = '/postagens';
+        } else if (cliente.email.trim() === 'admin@email.com' && cliente.senha === 'admin123') {
+            window.location.href = '/admin';
         } else {
             alert('Usuário e senha não foram encontrados no banco de dados.')
         }
