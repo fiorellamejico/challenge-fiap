@@ -3,7 +3,7 @@ import '../news/card.css'
 import getUserData from '../schemas/usuarioTesteSchema'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faNewspaper, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
+import { faAdd, faNewspaper, faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 
 
 export default function Nav() {
@@ -30,7 +30,8 @@ export default function Nav() {
                 <Link to={'/postagens/news'}><li className=' w-14 lg:w-full h-14 hover:cursor-pointer hover:underline border-neutral-300 border-b-2 py-2 flex items-center text-2xl text-neutral-600'><FontAwesomeIcon className=' mr-2 text-5xl' icon={faNewspaper} /><p className=' hidden lg:block'> News</p>
                     <span className=" ml-9 mt-8 absolute inline-flex items-center justify-center w-5 h-5 bg-sch-green text-xs text-white font-bold rounded-full">1</span>
                 </li></Link>
-
+                
+                <li onClick={() => alert('Função em produção.')} className='w-14 lg:w-full h-14 hover:cursor-pointer hover:underline border-neutral-300 border-b-2 py-2 flex items-center text-2xl text-sch-green'><FontAwesomeIcon className=' mr-2 text-5xl text-sch-green border-sch-green' icon={faAdd} /> <p className=' text-sch-green font-bold hidden lg:block'>Novo Post</p></li>
             </ul>
         </nav >
     )

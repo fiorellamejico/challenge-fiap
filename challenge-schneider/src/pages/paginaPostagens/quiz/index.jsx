@@ -1,19 +1,56 @@
 import './styled.jsx'
 import { AreaQuiz } from './styled.jsx'
 import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react';
 
 export default function Quiz() {
+
+    const [remainingTime, setRemainingTime] = useState(10000); // Defina o tempo inicial aqui em segundos
+
+    // Função para formatar o tempo restante
+    const formatTime = (timeInSeconds) => {
+        const hours = Math.floor(timeInSeconds / 3600);
+        const minutes = Math.floor((timeInSeconds % 3600) / 60);
+        const seconds = timeInSeconds % 60;
+
+        return `${hours.toString().padStart(2, '0')}:${minutes
+            .toString()
+            .padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    };
+
+    const action = () => {
+        alert('Obrigado pela resposta!')
+        window.location.href = '/postagens'
+    }
+
+    useEffect(() => {
+
+
+        // Função para atualizar o tempo restante a cada segundo
+        const interval = setInterval(() => {
+            setRemainingTime((prevTime) => prevTime - 1);
+        }, 1000);
+
+        // Limpar intervalo quando o componente é desmontado
+        return () => clearInterval(interval);
+    }, []);
+
     return (
-        <div className=' w-full flex justify-center'>
+        <div className="w-full   flex flex-col justify-center items-center">
+            <div className=' my-4 flex flex-col justify-center items-center'>
+                <p className=''>Tempo restante para completar o quiz:</p>
+                <div className=' select-none p-4  text-4xl '>{formatTime(remainingTime)}</div>
+            </div>
+
             <AreaQuiz>
                 <div className='container w-full'>
                     <div className=" p-3  w-full rounded-xl ">
                         <h1 className=' font-bold text-2xl text-sch-green text-center '>Quiz diário</h1>
-                        <p className=' text-center mt-4 mb-1 text-xs text-neutral-600'>Escolha a opção correta:</p>
 
-                        <div className='perguntas pb-4'>
 
+                        <div className='p-4 mt-4 perguntas'>
                             <div className='geralPerguntas'>
+                                <p className=' text-center mt-2 mb-4 text-neutral-600'>Escolha a opção correta:</p>
                                 <p>1. Qual é o processo de decomposição de matéria orgânica?</p>
                                 <div id='ansp1' className='ans flex flex-row space-x-2.5 place-content-center'>
                                     <input type="radio" name='p1' id='resp1a' value="resp1a" className='resp1a' />
@@ -48,7 +85,7 @@ export default function Quiz() {
                                 </div>
                             </div>
 
-                            <button className='mb-4'>Verificar</button>
+                            <button onClick={() => action()} className=' mb-4'>Verificar</button>
                             <Link className=' self-center w-full h-fit text-gray-700 text-center m-4 underline ' to={'/postagens'}>Retornar</Link>
 
                         </div>
@@ -62,7 +99,7 @@ export default function Quiz() {
             </AreaQuiz>
         </div >
 
-            )
+    )
 
 
 }
