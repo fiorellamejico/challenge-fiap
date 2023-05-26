@@ -3,6 +3,7 @@ import { faEdit, faHeart } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import PopUp from '../../../componentes/popUp/popUp'
 
 
 export default function MeuPerfil() {
@@ -20,11 +21,10 @@ export default function MeuPerfil() {
     }
 
     return (
-        <div className=' h-screen flex flex-col  overflow-hidden justify-center items-center'>
+        <div className=' w-full h-screen flex flex-col  overflow-hidden justify-center items-center'>
             {windowOpen &&
-                <div className=' mb-4 border p-10 w-2/3 h-fit bg-neutral-100 text-neutral-600'>
-                    <p>Na nossa plataforma, a pontuação e o ranking mensal são utilizados para medir o engajamento e a participação ativa dos usuários. A pontuação é obtida por meio de interações construtivas, compartilhamento de conhecimentos, participação em discussões e acertos nos quizzes. Quanto mais envolvimento, maior será a pontuação. O ranking mensal classifica os usuários com base na pontuação acumulada durante o mês. Parabenizamos o usuário pelo seu atual 24° lugar no ranking e incentivamos a continuidade da participação ativa para alcançar uma posição ainda melhor no próximo mês.</p>
-                    <button onClick={() => setWindowOpen(false)} className=' w-24 bg-black text-white text-xl rounded-md mt-4'> Ok </button>
+                <div className=' w-1/2'>
+                    <PopUp setWindowOpen={setWindowOpen} message={['Na nossa plataforma, a pontuação e o ranking mensal são utilizados para medir o engajamento e a participação ativa dos usuários.', 'A pontuação é obtida por meio de interações construtivas, compartilhamento de conhecimentos, participação em discussões e acertos nos quizzes. Quanto mais envolvimento, maior será a pontuação.', ' O ranking mensal classifica os usuários com base na pontuação acumulada durante o mês. Parabenizamos o usuário pelo seu atual 24° lugar no ranking e incentivamos a continuidade da participação ativa para alcançar uma posição ainda melhor no próximo mês.']} />
                 </div>
             }
             <div className=' mb-3 rounded-xl shadow-inner bg-neutral-200 '>
