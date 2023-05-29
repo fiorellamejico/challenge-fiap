@@ -16,7 +16,7 @@ export default function Nav() {
     }, [])
 
     return (
-        <nav className=' h-full select-none flex flex-col items-center fade-in-card w-2/12 p-4 fixed top-14 lg:left-60 '>
+        <nav className=' h-full select-none flex flex-col items-center fade-in-card w-2/12 p-4 fixed top-14 lg:left-20 '>
             <ul className=' w-full'>
                 <Link to={'/postagens/perfil'}>
                     <li className=' w-14 lg:w-full h-14 hover:cursor-pointer hover:underline border-neutral-300 border-b-2 pb-2 flex items-center  text-2xl text-neutral-600'>

@@ -38,7 +38,7 @@ export const Post = ({ titulo, conteudo, imagemUrl, usuario, likes, comentarios 
           </div>
           <div className=' w-full h-4/6 p-4 '>
             <h2 className="text-2xl font-bold mb-2 text-neutral-800">{titulo}</h2>
-            <p className=" text-neutral-600 mb-4 text-xs">{conteudo}</p>
+            <p className=" text-neutral-600 mb-4 text-s">{conteudo}</p>
           </div>
           <div className=' flex justify-end items-center rounded-br-xl h-1/6 w-full'>
             <div className=' w-2/3'>

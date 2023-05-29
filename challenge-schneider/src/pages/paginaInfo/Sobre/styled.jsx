@@ -17,7 +17,9 @@ export const AreaSobre = styled.div`
         
    }
     .card{
+        margin-bottom:20px;
         padding: 20px;
+        height: 580px;
     }
     
     .foto{
@@ -32,4 +34,9 @@ export const AreaSobre = styled.div`
         color: #46cd4d;
     }
     
+    
+    .recursos p{
+        padding-bottom:1rem;
+        
+    }
 `;
