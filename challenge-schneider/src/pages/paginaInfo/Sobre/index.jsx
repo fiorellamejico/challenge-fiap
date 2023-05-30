@@ -3,7 +3,7 @@ import { AreaHeader } from "../../../componentes/header/styled";
 import logo from "/images/schneider-logo-white.png"
 import fotoFiorella from '/images/fiorella.jpg'
 import { AreaSobre } from './styled';
-
+import fotoLeonardo from '/images/leonardo.jpg'
 
 function Sobre() {
     return (
@@ -69,14 +69,14 @@ function Sobre() {
                         </div>
                         <div className='card flex-shrink-0 w-72 space-y-1  bg-neutral-50 shadow-md rounded-t-xl'>
                             <div className='foto flex'>
-                                <img src="https://img.freepik.com/vetores-premium/pessoa-desconhecida-mulher_116137-3895.jpg?w=2000" alt="foto" className='rounded-full' />
+                                <img src={fotoLeonardo} alt="foto" className='rounded-full' />
                             </div>
                             <h2>Nome:</h2>
-                            <p>Leonardo Rodrigues Henriques</p>
+                            <p>Leonardo Mazolini Fernandes</p>
                             <h2>Rm:</h2>
-                            <p>970878</p>
+                            <p>96897</p>
                             <h2>Função:</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, accusantium!</p>
+                            <p>Estilização, diagramação e interatividade. Aprimoramento de UI e UX.</p>
 
                         </div>
                         <div className='card flex-shrink-0 w-72 space-y-1  bg-neutral-50 shadow-md rounded-t-xl'>
