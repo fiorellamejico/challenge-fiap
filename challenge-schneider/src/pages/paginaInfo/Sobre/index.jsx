@@ -4,6 +4,7 @@ import logo from "/images/schneider-logo-white.png"
 import fotoFiorella from '/images/fiorella.jpg'
 import { AreaSobre } from './styled';
 import fotoLeonardo from '/images/leonardo.jpg'
+import fotoAna from '/images/ana.jpeg'
 
 function Sobre() {
     return (
@@ -31,28 +32,31 @@ function Sobre() {
                     </div>
 
                     <div className='flex justify-center flex-wrap space-x-5 cards'>
-                        <div className='card flex-shrink-0 w-72 space-y-1 bg-neutral-50 shadow-md rounded-t-xl'>
-                            <div className='foto flex'>
-                                <img src={fotoFiorella} alt="foto" className='rounded-full' />
-                            </div>
-                            <h2>Nome:</h2>
-                            <p>Marilia Fiorella Méjico Mendoza Bueno</p>
-                            <h2>Rm:</h2>
-                            <p>97300</p>
-                            <h2>Função:</h2>
-                            <p>Elaboração de formulários, página Sobre, criação de conteúdo de postagens, e quiz.</p>
-
-                        </div>
+                        
                         <div className='card flex-shrink-0 w-72 space-y-1  bg-neutral-50 shadow-md rounded-t-xl'>
                             <div className='foto flex'>
-                                <img src="https://img.freepik.com/vetores-premium/pessoa-desconhecida-mulher_116137-3895.jpg?w=2000" alt="foto" className='rounded-full' />
+                                <img src={fotoAna} alt="foto" className='rounded-full' />
                             </div>
                             <h2>Nome:</h2>
                             <p>Ana Luiza Barbosa Eduardo do Nascimento</p>
                             <h2>Rm:</h2>
                             <p>96775</p>
                             <h2>Função:</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, accusantium!</p>
+                            <p>Elaboração do vídeo Pitch</p>
+
+                        </div>
+
+                        
+                        <div className='card flex-shrink-0 w-72 space-y-1  bg-neutral-50 shadow-md rounded-t-xl'>
+                            <div className='foto flex'>
+                                <img src={fotoLeonardo} alt="foto" className='rounded-full' />
+                            </div>
+                            <h2>Nome:</h2>
+                            <p>Leonardo Mazolini Fernandes</p>
+                            <h2>Rm:</h2>
+                            <p>96897</p>
+                            <h2>Função:</h2>
+                            <p>Estilização, diagramação e interatividade. Aprimoramento de UI e UX.</p>
 
                         </div>
                         <div className='card flex-shrink-0 w-72 space-y-1  bg-neutral-50 shadow-md rounded-t-xl'>
@@ -64,19 +68,19 @@ function Sobre() {
                             <h2>Rm:</h2>
                             <p>997024</p>
                             <h2>Função:</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, accusantium!</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, obcaecati?</p>
 
                         </div>
-                        <div className='card flex-shrink-0 w-72 space-y-1  bg-neutral-50 shadow-md rounded-t-xl'>
+                        <div className='card flex-shrink-0 w-72 space-y-1 bg-neutral-50 shadow-md rounded-t-xl'>
                             <div className='foto flex'>
-                                <img src={fotoLeonardo} alt="foto" className='rounded-full' />
+                                <img src={fotoFiorella} alt="foto" className='rounded-full' />
                             </div>
                             <h2>Nome:</h2>
-                            <p>Leonardo Mazolini Fernandes</p>
+                            <p>Marilia Fiorella Méjico Mendoza Bueno</p>
                             <h2>Rm:</h2>
-                            <p>96897</p>
+                            <p>97300</p>
                             <h2>Função:</h2>
-                            <p>Estilização, diagramação e interatividade. Aprimoramento de UI e UX.</p>
+                            <p>Elaboração de formulários, página Sobre, criação de conteúdo de postagens, e quiz.</p>
 
                         </div>
                         <div className='card flex-shrink-0 w-72 space-y-1  bg-neutral-50 shadow-md rounded-t-xl'>
