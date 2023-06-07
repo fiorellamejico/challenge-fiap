@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { AreaHeader } from "../../../componentes/header/styled";
 import logo from "/images/schneider-logo-white.png"
-import fotoFiorella from '/images/fiorella.jpg'
+import fotoFiorella from '/images/fiorella.jpeg'
 import { AreaSobre } from './styled';
 import fotoLeonardo from '/images/leonardo.jpg'
 import fotoAna from '/images/ana.jpeg'
@@ -68,7 +68,7 @@ function Sobre() {
                             <h2>Rm:</h2>
                             <p>997024</p>
                             <h2>Função:</h2>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, obcaecati?</p>
+                            <p>Elaboração do vídeo Pitch e nova postagem com modal.</p>
 
                         </div>
                         <div className='card flex-shrink-0 w-72 space-y-1 bg-neutral-50 shadow-md rounded-t-xl'>
@@ -80,7 +80,7 @@ function Sobre() {
                             <h2>Rm:</h2>
                             <p>97300</p>
                             <h2>Função:</h2>
-                            <p>Elaboração de formulários, página Sobre, criação de conteúdo de postagens, e quiz.</p>
+                            <p>Elaboração dos formulários e validações, página Sobre, página Quiz, estilizações, pesquisa e criação de conteúdo.</p>
 
                         </div>
                         <div className='card flex-shrink-0 w-72 space-y-1  bg-neutral-50 shadow-md rounded-t-xl'>

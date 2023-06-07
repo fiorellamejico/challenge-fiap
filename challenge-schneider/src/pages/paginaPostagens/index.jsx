@@ -4,6 +4,7 @@ import { Post } from "./post/post"
 import Loading from "../../componentes/loading/loading";
 import Nav from "./nav";
 import PopUp from "../../componentes/popUp/popUp";
+import MyComponent from "./newPost";
 
 export default function TelaDePostagens() {
 
@@ -32,7 +33,7 @@ export default function TelaDePostagens() {
             <div className=" w-1/5 lg:w-4/12 ">
                 <Nav />
             </div>
-
+            
 
             <div className={` w-4/5 pt-2 lg:w-6/12 flex flex-col  items-center min-h-screen `}>
 
@@ -50,7 +51,13 @@ export default function TelaDePostagens() {
                         'Lembre-se de ser respeitoso, colaborativo e construtivo em suas interações. Vamos aproveitar ao máximo essa plataforma, inspirando-nos mutuamente e incentivando um ambiente de trabalho sustentável e próspero.']} setWindowOpen={setWindowOpen} />
                 }
 
-
+            <div>
+                {
+                    
+                    <MyComponent message={[]} setWindowOpen={setWindowOpen} />
+                }
+            </div>
+                
 
                 {posts.length > 0 &&
                     posts.map((post, i) => {
@@ -58,6 +65,9 @@ export default function TelaDePostagens() {
                     })
                 }
             </div >
+            <div>
+
+            </div>
            
 
         </div>

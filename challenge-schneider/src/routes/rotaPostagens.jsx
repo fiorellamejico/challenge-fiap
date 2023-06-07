@@ -6,6 +6,7 @@ import '../componentes/App.css';
 import MeuPerfil from '../pages/paginaPostagens/perfil';
 import News from '../pages/paginaPostagens/news';
 import Quiz from '../pages/paginaPostagens/quiz';
+import NewPost from '../pages/paginaPostagens/newPost';
 
 export default function RotaPostagens() {
     return (
@@ -16,6 +17,7 @@ export default function RotaPostagens() {
                 <Route path='/perfil' Component={MeuPerfil} />
                 <Route path='/news' Component={News} />
                 <Route path='/quiz' Component={Quiz} />
+                <Route path='/newPost' Component={NewPost} />
             </Routes>
         </>
     )
