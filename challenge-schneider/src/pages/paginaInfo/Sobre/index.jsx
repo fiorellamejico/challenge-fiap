@@ -85,14 +85,14 @@ function Sobre() {
                         </div>
                         <div className='card flex-shrink-0 w-72 space-y-1  bg-neutral-50 shadow-md rounded-t-xl'>
                             <div className='foto flex'>
-                                <img src="https://img.freepik.com/vetores-premium/pessoa-desconhecida-mulher_116137-3895.jpg?w=2000" alt="foto" className='rounded-full' />
+                                <img src="https://media.licdn.com/dms/image/D4D03AQHwQWH5us0AzA/profile-displayphoto-shrink_800_800/0/1678029806435?e=2147483647&v=beta&t=n9Pnp-hy6y5ffObQINUBFDdnOBJvGTdOc_CcFP5IQds" alt="foto" className='rounded-full' />
                             </div>
                             <h2>Nome:</h2>
                             <p>Victor Bonetti Pegoraro</p>
                             <h2>Rm:</h2>
                             <p>97533</p>
                             <h2>Função:</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, accusantium!</p>
+                            <p>Programação das rotas e páginas. Elaboração de conteúdos, lógica e regras de negócio.</p>
 
                         </div>
 
