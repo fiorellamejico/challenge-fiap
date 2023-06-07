@@ -4,6 +4,7 @@ import logo from "/images/schneider-logo-white.png"
 import fotoFiorella from '/images/fiorella.jpeg'
 import { AreaSobre } from './styled';
 import fotoLeonardo from '/images/leonardo.jpg'
+import fotoLuana from '/images/luana.jpg'
 import fotoAna from '/images/ana.jpeg'
 
 function Sobre() {
@@ -61,7 +62,7 @@ function Sobre() {
                         </div>
                         <div className='card flex-shrink-0 w-72 space-y-1  bg-neutral-50 shadow-md rounded-t-xl'>
                             <div className='foto flex'>
-                                <img src="https://img.freepik.com/vetores-premium/pessoa-desconhecida-mulher_116137-3895.jpg?w=2000" alt="foto" className='rounded-full ' />
+                                <img src={fotoLuana} alt="foto" className='rounded-full ' />
                             </div>
                             <h2>Nome:</h2>
                             <p>Luana Batista de Oliveira</p>
