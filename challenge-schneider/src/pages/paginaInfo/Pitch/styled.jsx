@@ -15,8 +15,7 @@ export const AreaPitch = styled.div`
    }
 
    .video{
-    margin-left:auto;
-    margin-right:auto;
+    margin: 30px auto;
     max-width:800px;
    }
 `;
